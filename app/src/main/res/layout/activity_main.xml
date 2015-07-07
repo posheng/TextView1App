@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--設置字體大小為20pt，TextView後加上圖片-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_launcher"
+        android:text="我愛Java"
+        android:textSize="20pt" />
+    <!--設置中間省略，所有字母大寫-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="我愛Java我愛Java我愛Java我愛Java我愛Java我愛Java我愛Java"
+        android:textAllCaps="true" />
+    <!--對郵件、電話增加連結-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email|phone"
+        android:singleLine="true"
+        android:text="郵件是 Samuel.Huang@acer.com，电话是0288888888" />
+    <!--設置文字顏色、大小，並使用陰影-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#0000ff"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:text="測試文字"
+        android:textColor="#f00"
+        android:textSize="18pt" />
+    <!--測試密碼TextView-->
+    <TextView
+        android:id="@+id/passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:text="@string/hello" />
+    <!--測試CheckedTextView，透過CheckMark設定TextView的勾選圖案-->
+    <CheckedTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@drawable/ok"
+        android:text="可勾选的文本" />
+
+</LinearLayout>
